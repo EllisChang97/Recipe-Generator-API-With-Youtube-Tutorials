@@ -1,7 +1,7 @@
 # Some changes from last time
 
 ## Local modules
-The Trakt API stuff is in the /modules/trakt folder.
+The Edamam and Youtube API functions are in the /modules/edamam folder.
 
 
 ## Secured API settings using .env
