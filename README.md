@@ -1,4 +1,4 @@
-## Recipe Generator with Youtube Tutuorials
+## Recipe Generator with Youtube Tutorials
 
 An application that allows you to search for recipes based on one or more inputted ingredients.
     - using the Edamam API
