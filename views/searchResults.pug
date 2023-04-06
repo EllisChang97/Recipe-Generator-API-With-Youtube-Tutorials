@@ -1,0 +1,26 @@
+extends layout 
+
+block main-content
+    button.back-btn(type="button" onclick="goBack()") Back
+    div#recipe-page-title-container
+        h1 All Recipes
+    div#recipe-container
+        each hit in searchResults
+                div.a-recipe 
+                    div.recipe-image
+                        - image = `${hit.recipe.image}`
+                        img.recipe-image(src=image) 
+                    div.recipe-information
+                        h1.recipe-name #{hit.recipe.label} 
+                        h2.region Region: #{hit.recipe.cuisineType} | Type: #{hit.recipe.dishType}
+                        h3.dietLabels #{hit.recipe.dietLabels}
+                        - url = `/dish-videos?id=${hit.recipe.label}` + ` ` + `recipe`;
+                        a(href=url) 
+                            button.my-button Youtube Recipe Videos
+                        
+
+                    
+                    
+
+
+

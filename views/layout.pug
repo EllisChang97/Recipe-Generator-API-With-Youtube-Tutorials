@@ -1,0 +1,21 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title} 
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+    script. 
+      function goBack() {
+        window.history.back();
+      }
+  body
+    header#header 
+      .header-content   
+        h2#site-name 
+          a(href="/") Recipes On Demand
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Ellis Chang, 2023.

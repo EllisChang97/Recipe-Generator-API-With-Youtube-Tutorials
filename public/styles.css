@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
+body {
+  font-family: 'Raleway';
+  margin: 0;
+  background-color: #FFFDD0;
+}
+/* -------------layout.pug--------------- */
+
+#header {
+  width:100%;
+  height:70px;
+  background-color: #FFF983;
+  margin-top: -20px;
+}
+
+.header-content {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#site-name > a{
+  margin-bottom:-20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Sail';
+} 
+
+/* -------------index.pug--------------- */
+#index-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+#search-bar{
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #3e8e41;
+}
+
+/* -------------searchResults.pug--------------- */
+
+
+#recipe-page-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#recipe-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap: 10%;
+  row-gap: 40px;
+}
+
+.a-recipe {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  gap: 20px;
+} 
+
+.recipe-image {
+  border-radius: 10px;
+  width: 200px;
+}
+
+
+.recipe-information {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+.recipe-name {
+  font-size: 25px;
+}
+
+.region {
+  font-size: 15px;
+}
+
+.dietLabels {
+  font-size: 15px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FF0000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.my-button:hover {
+  background-color: #830e0e;
+}
+
+/* ------------- videos.pug --------------- */
+
+#video-page-title-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#videos-container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a-video {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------Back Buttons--------------- */
+
+.back-btn {
+  margin-top: 30px;
+  margin-left:30px;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #8388FF;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #187bcd;
+}
+
+.back-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #8388FF;
+}
+
+

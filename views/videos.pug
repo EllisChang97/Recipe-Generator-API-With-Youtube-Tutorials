@@ -1,0 +1,12 @@
+extends layout 
+
+block main-content  
+    button(class="back-btn" type="button" onclick="goBack()") Back
+    div#video-page-title-container    
+        h1.page-title Videos for dish
+    div#videos-container
+        each item in items
+            div.a-video
+                h3 #{item.snippet.title}
+                - url = `http://www.youtube.com/embed/${item.id.videoId}`;
+                iframe(width="420" height="315" src=url frameborder="0" allowfullscreen)

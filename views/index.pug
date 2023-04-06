@@ -1,0 +1,8 @@
+extends layout 
+
+block main-content
+    div#index-hero
+        h1 Search recipes that incorporate...
+        form(method='get' action='/search')
+            input#search-bar(type='text' name='query' placeholder='Ex. Chicken, Kimchi, Eggs')
+            button(id='search-button' type='submit') Search
